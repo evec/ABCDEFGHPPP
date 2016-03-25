@@ -14,6 +14,9 @@ for g in 2...9{
             var ef = (p*100+p*10+p)-(g*10+h)
             var e = ef/10
             var f = ef%10
+           if e==f{
+            continue
+        }
         
         //ef + cd = ab
             for c in 1...9{
