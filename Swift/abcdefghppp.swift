@@ -25,7 +25,7 @@ for g in 2...9{
                         continue}
                         var ab = ef+c*10+d
                         if ab>99{
-                            continue}
+                            break}
                     
                             var a = ab/10
                             var b = ab%10
