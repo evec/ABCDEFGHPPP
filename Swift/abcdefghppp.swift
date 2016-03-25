@@ -6,7 +6,7 @@ import Cocoa
 
 var p = 1;
 
-// g start from 1 because no 0 and p=1
+// g start from 2 because no 0 and p=1
 for g in 2...9{
     for h in 0...9{
         if h==p||g==h{
