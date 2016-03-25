@@ -1,4 +1,5 @@
-//: Tested on Xcode 7.3 Playground
+/ Tested on Xcode 7.3 Playground
+// AB - CD = EF + GH = PPP
 
 import Cocoa
 
@@ -14,14 +15,14 @@ for g in 2...9{
             var ef = (p*100+p*10+p)-(g*10+h)
             var e = ef/10
             var f = ef%10
-           if e==f{
+        if e==f || e==1 || f==1{
             continue
         }
         
         //ef + cd = ab
-            for c in 1...9{
+            for c in 2...9{
                 for d in 0...9{
-                    if c==p||d==p||c==e||d==e||c==f||d==f||c==g||d==g||c==h||d==h||c==d{
+                    if d==p||c==e||d==e||c==f||d==f||c==g||d==g||c==h||d==h||c==d{
                         continue}
                         var ab = ef+c*10+d
                         if ab>99{
