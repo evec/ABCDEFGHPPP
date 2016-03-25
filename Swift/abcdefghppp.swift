@@ -18,7 +18,7 @@ for g in 2...9{
         //ef + cd = ab
             for c in 1...9{
                 for d in 0...9{
-                    if c==p||d==p||c==e||d==e||c==f||d==f||c==g||d==g||c==f||d==f||c==d{
+                    if c==p||d==p||c==e||d==e||c==f||d==f||c==g||d==g||c==h||d==h||c==d{
                         continue}
                         var ab = ef+c*10+d
                         if ab>99{
@@ -26,7 +26,7 @@ for g in 2...9{
                     
                             var a = ab/10
                             var b = ab%10
-                                if a==p||b==p||a==e||b==e||a==f||b==f||a==g||b==g||a==f||b==f||a==c||b==c||a==d||a==d||a==b{
+                                if a==p||b==p||a==e||b==e||a==f||b==f||a==g||b==g||a==h||b==h||a==c||b==c||a==d||a==d||a==b{
                                     continue}
                                 print("AB \(a)\(b)- CD \(c)\(d) = EF \(e)\(f) +GH \(g)\(h) = \(p)\(p)\(p)")
                     
