@@ -1,17 +1,20 @@
 // Tested on Xcode 7.3 Playground
 // AB - CD = EF + GH = PPP
+// Calcuate based from backward
+// EF = PPP-GH and AB = EF+CD
+
 
 import Cocoa
 
 
 var p = 1;
 
-// g start from 2 because no 0 and p=1
+
 for g in 2...9{
     for h in 0...9{
         if h==p||g==h{
             continue}
-        // ef = 111-gh
+        
             var ef = (p*100+p*10+p)-(g*10+h)
             var e = ef/10
             var f = ef%10
@@ -19,7 +22,7 @@ for g in 2...9{
             continue
         }
         
-        //ef + cd = ab
+    
             for c in 2...9{
                 for d in 0...9{
                     if d==p||c==e||d==e||c==f||d==f||c==g||d==g||c==h||d==h||c==d{
